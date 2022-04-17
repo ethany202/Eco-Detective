@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+
+    android:orientation="vertical"
+    android:padding="8dp"
+    app:behavior_hideable="true">
+
+    <LinearLayout
+        android:id="@+id/gesture_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/bottom_sheet_bg"
+        android:onClick="returnHome"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        tools:layout_editor_absoluteX="13dp">
+
+        <ImageView
+            android:id="@+id/bottom_sheet_arrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/expand_arrow_40px" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recyclable Objects:"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:id="@+id/recycablesText"
+        android:textSize="23sp"
+        android:fontFamily="@font/coda"
+        android:layout_below="@+id/gesture_layout"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycablesLayout"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/recycablesText"
+        android:layout_marginBottom="20dp">
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compostable Objects:"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:id="@+id/compostablesText"
+        android:textSize="23sp"
+        android:fontFamily="@font/coda"
+        android:layout_below="@+id/recycablesLayout"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/compostablesLayout"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/compostablesText">
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="338dp"
+        android:layout_height="103dp"
+        android:fontFamily="@font/coda"
+        android:text="Customize the number of recyclable and compostable objects to detect (max: 5)"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.171" />
+
+    <TextView
+        android:id="@+id/recyclableCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="28dp"
+        android:fontFamily="@font/coda"
+        android:text="RECYCLE DETECTION"
+        android:textColor="#121212"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/recycableAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
+
+    <EditText
+        android:id="@+id/recycableAmount"
+        android:layout_width="139dp"
+        android:layout_height="41dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="24dp"
+        android:layout_toRightOf="@+id/recyclableCount"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="1"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.404" />
+
+    <TextView
+        android:id="@+id/compostableCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="COMPOST DETECTION"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/compostableAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="17sp"
+        android:textColor="#121212"
+        android:fontFamily="@font/coda"/>
+
+    <EditText
+        android:id="@+id/compostableAmount"
+        android:layout_width="138dp"
+        android:layout_height="43dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="24dp"
+        android:layout_toRightOf="@+id/recyclableCount"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="1"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="95dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="saveLocally"
+        android:text="Save"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:fontFamily="@font/coda"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
