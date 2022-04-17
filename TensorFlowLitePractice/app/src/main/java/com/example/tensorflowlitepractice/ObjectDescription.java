@@ -81,11 +81,11 @@ public class ObjectDescription extends Activity {
         str_paper = "\tRecycling paper reduces greenhouse gasses, helping limit the effects of climate change. " +
                 "It takes 70% less energy and water to recycle paper compared to creating new sheets. " +
                 "Every ton of recycled paper can save 17 trees.";
-        str_fruit = "\tComposting fruits dampens dry materials in compost which accelerates the decomposition process. " +
-                "It can enriches soil and suppresses plant diseases. " +
+        str_fruit = "\tComposting fruits dampens dry materials in compost, which accelerates the decomposition process. " +
+                "It can enrich soil and suppresses plant diseases. " +
                 "Furthermore, it reduces the need for chemical fertilizers.";
-        str_vegetable = "\tLike fruits, composting vegetables dampens dry materials in compost which accelerates the decomposition process. " +
-                "It can enriches soil and suppresses plant diseases. " +
+        str_vegetable = "\tLike fruits, composting vegetables dampens dry materials in compost, which accelerates the decomposition process. " +
+                "It can enrich soil and suppresses plant diseases. " +
                 "Furthermore, it reduces the need for chemical fertilizers.";
     }
 }
